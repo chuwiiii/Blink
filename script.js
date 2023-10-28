@@ -1,5 +1,4 @@
 //navigation menu
-
 var navLinks = document.getElementById("navLinks");
 
 
