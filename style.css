@@ -22,7 +22,13 @@ h2{
     font-size: 36px;
     font-weight: 600;
   }
-  td {
+  td.pinkStrong {
+    color: #bc1f7d;
+    display: table-cell;
+    vertical-align: inherit;
+} 
+td {
+    color: #000000;
     display: table-cell;
     vertical-align: inherit;
 }
