@@ -25,12 +25,27 @@ h2{
   td.pinkStrong {
     color: #bc1f7d;
     display: table-cell;
+    position: relative;
     vertical-align: inherit;
+    font-size: 14pt;
+    line-height: 1.95em;
+    letter-spacing: 0.025em;
+    text-align: center;
 } 
 td {
     color: #000000;
     display: table-cell;
+    position: relative;
     vertical-align: inherit;
+    font-size: 14pt;
+    line-height: 1.75em;
+    letter-spacing: 0.025em;
+    text-align: center;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-indent: initial;
 }
 .text-box img {
     max-width: 40%;
