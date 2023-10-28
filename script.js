@@ -27,3 +27,13 @@ var audioElements = [
     document.getElementById("MEAlbum"),
     document.getElementById("LLAlbum"),
 ];
+
+var playButtons = [
+    document.getElementById("KTL"),
+    document.getElementById("SQ"),
+    document.getElementById("SOLO"),
+    document.getElementById("R"),
+    document.getElementById("BP"),
+    document.getElementById("ME"),
+    document.getElementById("LL"),
+];
