@@ -140,3 +140,36 @@ h4{
     font-weight: 600;
     margin: 10px 0;
 }
+
+/* audio */
+
+#SQ{
+    cursor: pointer;
+}
+
+#progress{
+    -webkit-appearance: none;
+    text-align: center;
+    width: 200px;
+    height: 6px;
+    background: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background:#ed5077; 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
+}
+.audio-bar{
+
+    text-align: center;
+    height: 5vh;
+    padding-top: -100px;
+}

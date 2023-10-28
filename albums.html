@@ -51,8 +51,83 @@
           </div>
         </div>
     </section>
-</body>
-<script>
+
+    <audio id="SQAlbum">
+      <source src="./Assets/[Full Mini Album] SQUARE UP.mp3" type="audio/mp3">
+    </audio>
+
+    //button
+    <button id="SQ">Play</button>
+    <input type="range" id="progress" min="0" value="0">
+
+  <script>
+
+    //audio
+    let progress = document.getElementById("progress");
+
+    var audioElements = [    
+    document.getElementById("SQAlbum")
+    ];
+    
+    var playButtons = [
+    document.getElementById("SQ")
+    ];
+
+    var currentAudio = null;
+
+    function stopAllAudio() {
+    audioElements.forEach(function (audio, index) {
+        audio.pause();
+        playButtons[index].innerHTML = "Play";
+    });
+}
+
+playButtons.forEach(function (button, index) {
+    button.addEventListener("click", function () {
+        if (currentAudio !== audioElements[index]) {
+            stopAllAudio();
+            audioElements[index].play();
+            currentAudio = audioElements[index];
+            button.innerHTML = "Pause";
+        } else {
+            if (currentAudio.paused) {
+                currentAudio.play();
+                button.innerHTML = "Pause";
+            } else {
+                currentAudio.pause();
+                button.innerHTML = "Play";
+            }
+        }
+    });
+});
+
+audioElements.forEach(function (audio, index) {
+    audio.addEventListener("loadedmetadata", function () {
+        progress.max = audio.duration;
+    });
+
+    audio.addEventListener("timeupdate", function () {
+        progress.value = audio.currentTime;
+    });
+
+    audio.addEventListener("ended", function () {
+        clearInterval(updateProgress);
+    });
+});
+
+progress.addEventListener("input", function () {
+    currentAudio.currentTime = progress.value;
+});
+
+let updateProgress = setInterval(function () {
+    if (!currentAudio.paused) {
+        progress.value = currentAudio.currentTime;
+    }
+}, 500);
+
+
+
+
     //navigation menu
 
     var navLinks = document.getElementById("navLinks");
@@ -72,5 +147,6 @@
         navLinks.style.right = "-200px";
     }
 
-    </script>
+  </script>
+  </body>
 </html>
