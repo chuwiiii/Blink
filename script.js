@@ -37,3 +37,12 @@ var playButtons = [
     document.getElementById("ME"),
     document.getElementById("LL"),
 ];
+
+var currentAudio = null; // To keep track of the currently playing audio
+
+function stopAllAudio() {
+    audioElements.forEach(function (audio, index) {
+        audio.pause();
+        playButtons[index].innerHTML = "Play";
+    });
+}
