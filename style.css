@@ -96,3 +96,47 @@ a img {
       width: 100%;
       transition: 0.5s;
   }
+  h1{
+    color: black;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  /*-----ALBUMS-----*/
+.albums{
+    background-color: #E89EB1;
+    text-align: center;
+    padding: 250px 0;
+    padding-top: 12%;
+}
+p1{
+    color: black;
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 22px;
+    padding: 0;
+    TEXT-ALIGN: center;
+}
+.row{
+    margin: 0%;
+    display: flexbox;
+    justify-content: space-between;
+}
+.albums-col{
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.albums-col img{
+    box-shadow: -15px 10px black;
+}
+h4{
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
