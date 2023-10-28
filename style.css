@@ -100,6 +100,7 @@ a img {
     color: black;
     font-size: 36px;
     font-weight: 600;
+
   }
   /*-----ALBUMS-----*/
 .albums{
@@ -146,6 +147,10 @@ h4{
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
 }
 
+#bornPinkAlbum {
+    transition: transform 0.5s ease-in-out;
+}
+
 #KTL{
     cursor: pointer;
 }
@@ -166,4 +171,50 @@ h4{
 }
 #LL{
     cursor: pointer;
+}
+
+#progress{
+    -webkit-appearance: none;
+    text-align: center;
+    width: 200px;
+    height: 6px;
+    background: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0px;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background:#ed5077; 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
+}
+.audio-bar{
+
+    text-align: center;
+    height: 5vh;
+    padding-top: -100px;
+}
+
+.song-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+#prev-song {
+  transform: translateX(-100%);
+}
+
+#current-song {
+  transform: translateX(0);
+}
+
+#next-song {
+  transform: translateX(100%);
 }
