@@ -140,3 +140,25 @@ h4{
     font-weight: 600;
     margin: 10px 0;
 }
+
+#KTL{
+    cursor: pointer;
+}
+#SQ{
+    cursor: pointer;
+}
+#SOLO{
+    cursor: pointer;
+}
+#R{
+    cursor: pointer;
+}
+#BP{
+    cursor: pointer;
+}
+#ME{
+    cursor: pointer;
+}
+#LL{
+    cursor: pointer;
+}
