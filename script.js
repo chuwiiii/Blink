@@ -70,3 +70,49 @@ let updateProgress = setInterval(function () {
         progress.value = currentAudio.currentTime;
     }
 }, 500);
+
+//song timeline
+
+var pinkVenomTime = 0;
+var transitionBackTime = 2.9;
+var pinkVenomTextColor = "red";
+
+audioElements.forEach(function (audio, index) {
+    audio.addEventListener("timeupdate", function () {
+        progress.value = audio.currentTime;
+
+        // Check the current time and apply or remove the text color accordingly
+        if (audio.currentTime >= pinkVenomTime) {
+            document.getElementById("pinkVenom").style.color = pinkVenomTextColor;
+        } else {
+            document.getElementById("pinkVenom").style.color = "black";
+        }
+
+        // Check if the audio time is close to transitioning to the next song
+        if (audio.currentTime >= transitionBackTime) {
+            document.getElementById("pinkVenom").style.color = "black";
+        }
+    });
+});
+
+var pinkVenomTime = 0;
+var transitionBackTime = 2.9;
+var pinkVenomTextColor = "red";
+
+audioElements.forEach(function (audio, index) {
+    audio.addEventListener("timeupdate", function () {
+        progress.value = audio.currentTime;
+
+        // Check the current time and apply or remove the text color accordingly
+        if (audio.currentTime >= pinkVenomTime) {
+            document.getElementById("pinkVenom").style.color = pinkVenomTextColor;
+        } else {
+            document.getElementById("pinkVenom").style.color = "black";
+        }
+
+        // Check if the audio time is close to transitioning to the next song
+        if (audio.currentTime >= transitionBackTime) {
+            document.getElementById("pinkVenom").style.color = "black";
+        }
+    });
+});
