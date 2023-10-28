@@ -35,7 +35,7 @@
     <section class="albums">
         <h1>Albums</h1>
         <div class="row">
-          <div class="albums-col">
+          <div class="albums-col" id="squareUpAlbum">
               <img src="./Assets/square up.png" id="SQ">
             <h4>SQUARE UP</h4>
             <p1>
@@ -48,5 +48,25 @@
           </div>
 
 </body>
+<script>
+    //navigation menu
 
+    var navLinks = document.getElementById("navLinks");
+
+
+    function hideMenuOnLoad() {
+        navLinks.style.right = "-200px";
+    }
+
+    window.addEventListener('load', hideMenuOnLoad);
+
+    function openMenu() {
+        navLinks.style.right = "0";
+    }
+
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+
+    </script>
 </html>
