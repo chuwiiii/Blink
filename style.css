@@ -141,6 +141,11 @@ h4{
     margin: 10px 0;
 }
 
+.albums-col:hover{
+    transform: scale(1.20);
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
 #KTL{
     cursor: pointer;
 }
