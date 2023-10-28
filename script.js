@@ -46,3 +46,27 @@ function stopAllAudio() {
         playButtons[index].innerHTML = "Play";
     });
 }
+
+audioElements.forEach(function (audio, index) {
+    audio.addEventListener("loadedmetadata", function () {
+        progress.max = audio.duration;
+    });
+
+    audio.addEventListener("timeupdate", function () {
+        progress.value = audio.currentTime;
+    });
+
+    audio.addEventListener("ended", function () {
+        clearInterval(updateProgress);
+    });
+});
+
+progress.addEventListener("input", function () {
+    currentAudio.currentTime = progress.value;
+});
+
+let updateProgress = setInterval(function () {
+    if (!currentAudio.paused) {
+        progress.value = currentAudio.currentTime;
+    }
+}, 500);
