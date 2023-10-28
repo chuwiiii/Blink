@@ -42,14 +42,13 @@
                 </div>
             <h4>SQUARE UP</h4>
             <p1>
-              Ddu-Du Ddu-Du (뚜두뚜두)<br>
-              Forever Young<br>
-              Really<br>
-              See U Later<br>
-              As If It's Your Last (마지막처럼)<br>
+              <span id="dduDu">Ddu-Du Ddu-Du (뚜두뚜두)</span><br>
+              <span id="foreverYoung">Forever Young</span><br>
+              <span id="Really">Really</span><br>
+              <span id="seeUlater">See U Later</span><br>
+              <span id="AIIYL">As If It's Your Last (마지막처럼)</span><br>
             </p1>
           </div>
-        </div>
     </section>
 
     <audio id="SQAlbum">
@@ -59,6 +58,7 @@
     //button
     <button id="SQ">Play</button>
     <input type="range" id="progress" min="0" value="0">
+</body>
 
   <script>
 
@@ -68,7 +68,7 @@
     var audioElements = [    
     document.getElementById("SQAlbum")
     ];
-    
+
     var playButtons = [
     document.getElementById("SQ")
     ];
@@ -125,6 +125,31 @@ let updateProgress = setInterval(function () {
     }
 }, 500);
 
+//song timeline
+
+var dduDuTime = 0;
+var transitionBackTime = 60;
+var dduDuTextColor = "red";
+
+audioElements.forEach(function (audio, index) {
+    audio.addEventListener("timeupdate", function () {
+        progress.value = audio.currentTime;
+
+        // check the current time and apply or remove the text color
+        if (audio.currentTime >= dduDuTime) {
+            document.getElementById("dduDu").style.color = dduDuTextColor;
+        } else {
+            document.getElementById("dduDu").style.color = "black";
+        }
+
+        // check if the audio time is close to transitioning sa next song
+        if (audio.currentTime >= transitionBackTime) {
+            document.getElementById("dduDu").style.color = "black";
+        }
+    });
+});
+
+
 
 
 
@@ -148,5 +173,4 @@ let updateProgress = setInterval(function () {
     }
 
   </script>
-  </body>
 </html>
