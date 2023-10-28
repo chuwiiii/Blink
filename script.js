@@ -47,6 +47,25 @@ function stopAllAudio() {
     });
 }
 
+playButtons.forEach(function (button, index) {
+    button.addEventListener("click", function () {
+        if (currentAudio !== audioElements[index]) {
+            stopAllAudio();
+            audioElements[index].play();
+            currentAudio = audioElements[index];
+            button.innerHTML = "Pause";
+        } else {
+            if (currentAudio.paused) {
+                currentAudio.play();
+                button.innerHTML = "Pause";
+            } else {
+                currentAudio.pause();
+                button.innerHTML = "Play";
+            }
+        }
+    });
+});
+
 audioElements.forEach(function (audio, index) {
     audio.addEventListener("loadedmetadata", function () {
         progress.max = audio.duration;
