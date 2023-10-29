@@ -21,3 +21,8 @@ p{
     display: flexbox;
     justify-content: center;
 }
+.members-col img {
+    max-width: 30%;
+    height: 30%;
+    box-shadow: -15px 10px #E89EB1;
+}
