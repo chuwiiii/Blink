@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.text-box {
+    background-color: #E89EB1;
+    position: relative;
+    text-align: center;
+    height: 150vh;
+    padding-top: 12%;
+}
+h1{
+  color: #000000;
+  font-size: 36px;
+  font-weight: 600;
+}
+h2{
+    color: #bc1f7d;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  td.pinkStrong {
+    color: #bc1f7d;
+    vertical-align: middle;
+    font-size: 12.5pt;
+    line-height: 1.95em;
+    letter-spacing: 0.025em;
+    text-align: center;
+} 
+td {
+    color: #000000;
+    vertical-align: middle;
+    font-size: 13pt;
+    line-height: 1.75em;
+    letter-spacing: 0.025em;
+    text-align: center;
+}
+.table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-indent: initial;
+    text-align: center;
+}
+.text-box img {
+    max-width: 40%;
+    width: auto;
+    height: auto;
+    max-height: 50vh;
+    box-shadow: -15px 10px black;
+}
+.text-box h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.text-box p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+    font-weight: 700;
+}
