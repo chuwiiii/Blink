@@ -39,3 +39,13 @@ p{
     transition: 0.5s;
     position: relative;
 }
+h3{
+    color: #E89EB1;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.members-col:hover{
+    box-shadow: 0 0 20px 0px #E89EB1;
+}
