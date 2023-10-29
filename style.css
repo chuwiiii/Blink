@@ -24,28 +24,29 @@ h2{
   }
   td.pinkStrong {
     color: #bc1f7d;
-    display: table-cell;
-    position: relative;
-    vertical-align: inherit;
-    font-size: 14pt;
+    vertical-align: middle;
+    font-size: 12.5pt;
     line-height: 1.95em;
     letter-spacing: 0.025em;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 } 
 td {
     color: #000000;
-    display: table-cell;
-    position: relative;
-    vertical-align: inherit;
-    font-size: 14pt;
+    vertical-align: middle;
+    font-size: 13pt;
     line-height: 1.75em;
     letter-spacing: 0.025em;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 table {
     border-collapse: collapse;
     border-spacing: 0;
     text-indent: initial;
+    text-align: center;
 }
 .text-box img {
     max-width: 40%;
