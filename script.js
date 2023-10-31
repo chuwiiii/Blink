@@ -38,8 +38,8 @@ document.querySelectorAll('.play-button').forEach(function (image) {
             { id: "dduduRemix", start: 768, end: 976 }
         ],
         SOLOAlbum: [
-            { id: "solo", start: 0.4, end: 169 },
-            { id: "soloIns", start: 169, end: 174 }
+            { id: "solo", start: 0.4, end: 170 },
+            { id: "soloIns", start: 170, end: 175.6 }
         ],
         RAlbum: [
             { id: "ontheGround", start: 0.4, end: 192 },
@@ -116,6 +116,8 @@ document.querySelectorAll('.play-button').forEach(function (image) {
         });
     });
 });
+
+
 
 
 
