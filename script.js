@@ -39,12 +39,11 @@ document.querySelectorAll('.play-button').forEach(function (image) {
         ],
         SOLOAlbum: [
             { id: "solo", start: 0.4, end: 169 },
-            { id: "soloIns", start: 169, end: 174 },
+            { id: "soloIns", start: 169, end: 174 }
         ],
         RAlbum: [
             { id: "ontheGround", start: 0.4, end: 192 },
             { id: "gone", start: 192, end: 362 }
-
         ],
         BPAlbum: [
             { id: "pinkVenom", start: 0.4, end: 183 },
@@ -54,7 +53,7 @@ document.querySelectorAll('.play-button').forEach(function (image) {
             { id: "hardToLove", start: 711, end: 764 },
             { id: "theHappiestGirl", start: 764, end: 981 },
             { id: "tally", start: 981, end: 1163 },
-            { id: "readyForLove", start: 1163, end: 193 }
+            { id: "readyForLove", start: 1163, end: 1357 }
         ],
         MEAlbum: [
             { id: "flower", start: 0.4, end: 173 },

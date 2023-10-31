@@ -225,6 +225,141 @@ h4{
     background: #ff199c;
   }
   
+  #progressSOLO {
+    -webkit-appearance: none;
+    text-align: center;
+    width: 200px;
+    height: 6px;
+    background: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0px;
+    outline: none; 
+  }
+  
+  #progressSOLO::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #ed5077;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
+  }
+  
+ 
+  #progressSOLO :hover::-webkit-slider-thumb {
+    background: #ff199c;
+  }
+
+  #progressR {
+    -webkit-appearance: none;
+    text-align: center;
+    width: 200px;
+    height: 6px;
+    background: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0px;
+    outline: none; 
+  }
+  
+  #progressR::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #ed5077;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
+  }
+  
+ 
+  #progressR :hover::-webkit-slider-thumb {
+    background: #ff199c;
+  }
+
+  #progressBP {
+    -webkit-appearance: none;
+    text-align: center;
+    width: 200px;
+    height: 6px;
+    background: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0px;
+    outline: none; 
+  }
+  
+  #progressBP::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #ed5077;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
+  }
+  
+ 
+  #progressBP :hover::-webkit-slider-thumb {
+    background: #ff199c;
+  }
+
+  #progressME {
+    -webkit-appearance: none;
+    text-align: center;
+    width: 200px;
+    height: 6px;
+    background: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0px;
+    outline: none; 
+  }
+  
+  #progressME::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #ed5077;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
+  }
+  
+ 
+  #progressME :hover::-webkit-slider-thumb {
+    background: #ff199c;
+  }
+
+  #progressLL {
+    -webkit-appearance: none;
+    text-align: center;
+    width: 200px;
+    height: 6px;
+    background: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0px;
+    outline: none; 
+  }
+  
+  #progressLL::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #ed5077;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
+  }
+  
+ 
+  #progressLL :hover::-webkit-slider-thumb {
+    background: #ff199c;
+  }
+  
   .audio-bar{
   
       text-align: center;
