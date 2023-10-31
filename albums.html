@@ -33,45 +33,58 @@
         <i class="fas fa-bars" onclick="openMenu()"></i>
       </nav>
   </section>
+  
   <section class="albums">
         <h1>Albums</h1>
         <div class="row">
           <div class="albums-col">
               <img src="./Assets/square up.png" id="SQ">
+              <div class="audio-bar">
+                <input type="range" value="0" id="progress">
+            </div>
             <h4>SQUARE UP</h4>
             <p1>
-              Ddu-Du Ddu-Du (뚜두뚜두)<br>
-              Forever Young<br>
-              Really<br>
-              See U Later<br>
-              As If It's Your Last (마지막처럼)<br>
+              <span id="ddudu">Ddu-Du Ddu-Du (뚜두뚜두)</span><br>
+              <span id="pinkVenom">Forever Young</span><br>
+              <span id="pinkVenom">Really</span><br>
+              <span id="pinkVenom">See U Later</span><br>
+              <span id="pinkVenom">As If It's Your Last (마지막처럼)</span><br>
             </p1>
           </div>
           <div class="albums-col">
             <img src="./Assets/kill this love pink.png" id="KTL">
+            <div class="audio-bar">
+              <input type="range" value="0" id="progress">
+          </div>
             <h4>KILL THIS LOVE</h4>
             <p1>
-              Kill This Love<br>
-              Don't Know What to Do<br>
-              Kick It<br>
-              Hope Not (아니길)<br>
-              Ddu-Du Ddu-Du (뚜두뚜두) Remix<br>
+              <span id="killThislove">Kill This Love</span><br>
+              <span id="DKWtD">Don't Know What to Do</span><br>
+              <span id="kickIt">Kick It</span><br>
+              <span id="hopeNot">Hope Not (아니길)</span><br>
+              <span id="dduduRemix">Ddu-Du Ddu-Du (뚜두뚜두) Remix</span><br>
             </p1>
           </div>
           <div class="albums-col">
             <img src="./Assets/jennie solo.jpg" id="SOLO">
+            <div class="audio-bar">
+              <input type="range" value="0" id="progress">
+          </div>
             <h4>SOLO</h4>
             <p1>
-              Solo<br>
-              Solo Intrumental<br>
+              <span id="solo">Solo</span><br>
+              <span id="soloIns">Solo Intrumental</span><br>
             </p1>
           </div>
           <div class="albums-col">
             <img src="./Assets/rose solo.png" id="R">
+            <div class="audio-bar">
+              <input type="range" value="0" id="progress">
+          </div>
             <h4>R</h4>
             <p1>
-              On The Ground<br>
-              GONE<br>
+              <span id="ontheGround">On The Ground</span><br>
+              <span id="gone">GONE</span><br>
             </p1>
           </div>
           <div class="albums-col" id="bornPinkAlbum">
@@ -93,18 +106,24 @@
         </div>
           <div class="albums-col">
             <img src="./Assets/MeAlbum.jpg" id="ME">
+            <div class="audio-bar">
+              <input type="range" value="0" id="progress">
+          </div>
             <h4>ME</h4>
             <p1>
-              Flower<br>
-              All Eyes On Me<br>
+              <span id="flower">Flower</span><br>
+              <span id="allEyesOnMe">All Eyes On Me</span><br>
             </p1>
           </div>
           <div class="albums-col">
             <img src="./Assets/LalisaAlbum.png" id="LL">
+            <div class="audio-bar">
+              <input type="range" value="0" id="progress">
+          </div>
             <h4>LALISA</h4>
             <p1>
-              Lalisa<br>
-              Money<br>
+              <span id="lalisa">Lalisa</span><br>
+              <span id="money">Money</span><br>
             </p1>
           </div>
         </div>
@@ -132,9 +151,17 @@
    <source src="./Assets/[Full Album] LALISA.mp3" type="audio/mp3">
  </audio>
  
+
+ <button id="KTL">Play</button>
+ <button id="SQ">Play</button>
+ <button id="SOLO">Play</button>
+ <button id="R">Play</button>
+ <button id="BP">Play</button>
+ <button id="ME">Play</button>
+ <button id="LL">Play</button>
  <input type="range" id="progress" min="0" value="0">
 
 
- <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
