@@ -186,47 +186,47 @@ audioElements.forEach(function (audio, index) {
 });
 
 //AIIYL
-var pinkVenomTime = 0;
+var AIIYLTime = 0;
 var transitionBackTime = 2.9;
-var pinkVenomTextColor = "red";
+var AIIYLTextColor = "red";
 
 audioElements.forEach(function (audio, index) {
     audio.addEventListener("timeupdate", function () {
         progress.value = audio.currentTime;
 
         // Check the current time and apply or remove the text color accordingly
-        if (audio.currentTime >= pinkVenomTime) {
-            document.getElementById("pinkVenom").style.color = pinkVenomTextColor;
+        if (audio.currentTime >= AIIYLTime) {
+            document.getElementById("AIIYL").style.color = AIIYLTextColor;
         } else {
-            document.getElementById("pinkVenom").style.color = "black";
+            document.getElementById("AIIYL").style.color = "black";
         }
 
         // Check if the audio time is close to transitioning to the next song
         if (audio.currentTime >= transitionBackTime) {
-            document.getElementById("pinkVenom").style.color = "black";
+            document.getElementById("AIIYL").style.color = "black";
         }
     });
 });
 
 //killThisLove
-var pinkVenomTime = 0;
+var killThisLoveTime = 0;
 var transitionBackTime = 2.9;
-var pinkVenomTextColor = "red";
+var killThisLoveTextColor = "red";
 
 audioElements.forEach(function (audio, index) {
     audio.addEventListener("timeupdate", function () {
         progress.value = audio.currentTime;
 
         // Check the current time and apply or remove the text color accordingly
-        if (audio.currentTime >= pinkVenomTime) {
-            document.getElementById("pinkVenom").style.color = pinkVenomTextColor;
+        if (audio.currentTime >= killThisLoveTime) {
+            document.getElementById("killThisLove").style.color = killThisLoveTextColor;
         } else {
-            document.getElementById("pinkVenom").style.color = "black";
+            document.getElementById("killThisLove").style.color = "black";
         }
 
         // Check if the audio time is close to transitioning to the next song
         if (audio.currentTime >= transitionBackTime) {
-            document.getElementById("pinkVenom").style.color = "black";
+            document.getElementById("killThisLove").style.color = "black";
         }
     });
 });
