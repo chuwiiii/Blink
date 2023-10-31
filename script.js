@@ -17,6 +17,15 @@ function hideMenu() {
 }
 
 // Audio Function
+//For play/pause hover
+const SQImage = document.getElementById("SQImage");
+const KTLImage = document.getElementById("KTLImage");
+const SOLOImage = document.getElementById("SOLOImage");
+const RImage = document.getElementById("RImage");
+const BPImage = document.getElementById("BPImage");
+const MEImage = document.getElementById("MEImage");
+const LLImage = document.getElementById("LLImage");
+
 
 // circle
 let audioElementf = document.getElementById('SQAlbum');
@@ -162,8 +171,22 @@ document.querySelectorAll('.play-button').forEach(function (image) {
         if (audioElement.paused) {
             stopAllAudio(); // Stop all other audio elements
             audioElement.play();
+            SQImage.title = "Pause";
+            KTLImage.title = "Pause";
+            SOLOImage.title = "Pause";
+            RImage.title = "Pause";
+            BPImage.title = "Pause";
+            MEImage.title = "Pause";
+            LLImage.title = "Pause";
         } else {
             audioElement.pause();
+            SQImage.title = "Play";
+            KTLImage.title = "Play";
+            SOLOImage.title = "Play";
+            RImage.title = "Play";
+            BPImage.title = "Play";
+            MEImage.title = "Play";
+            LLImage.title = "Play";
         }
     });
 
