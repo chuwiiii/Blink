@@ -19,32 +19,20 @@ h2{
     font-size: 36px;
     font-weight: 600;
   }
-  td.pinkStrong {
-    color: #bc1f7d;
-    vertical-align: middle;
-    font-size: 12.5pt;
-    line-height: 1.95em;
-    letter-spacing: 0.025em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-} 
-td {
-    color: #000000;
-    vertical-align: middle;
-    font-size: 13pt;
-    line-height: 1.75em;
-    letter-spacing: 0.025em;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: Arial, Helvetica, sans-serif;
-}  
-table {
+.info-table {
+    margin: 0 auto;
     border-collapse: collapse;
-    border-spacing: 0;
-    text-indent: initial;
-    text-align: center;
+    text-align: left;
+    width: 30%; /* gap ng column */
+}
+  
+.info-table td {
+    padding: 10px;
+}
+  
+.info-table .pinkStrong {
+    color: #bc1f7d;
+    font-weight: bold;
 }
 .text-box img {
     max-width: 40%;
