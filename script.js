@@ -95,7 +95,7 @@ let updateProgress = setInterval(function () {
 
 //ddudu
 var dduduTime = 0;
-var transitionBackTime = 2.9;
+var transitionBackTime = 208;
 var dduduTextColor = "red";
 
 audioElements.forEach(function (audio, index) {
@@ -117,8 +117,8 @@ audioElements.forEach(function (audio, index) {
 });
 
 //foreverYoung
-var foreverYoungTime = 0;
-var transitionBackTime = 2.9;
+var foreverYoungTime = 209;
+var transitionBackTime = 446;
 var foreverYoungTextColor = "red";
 
 audioElements.forEach(function (audio, index) {
@@ -140,8 +140,8 @@ audioElements.forEach(function (audio, index) {
 });
 
 //really
-var reallyTime = 0;
-var transitionBackTime = 2.9;
+var reallyTime = 447;
+var transitionBackTime = 645;
 var reallyTextColor = "red";
 
 audioElements.forEach(function (audio, index) {
@@ -163,8 +163,8 @@ audioElements.forEach(function (audio, index) {
 });
 
 //seeULater
-var seeULaterTime = 0;
-var transitionBackTime = 2.9;
+var seeULaterTime = 646;
+var transitionBackTime = 840;
 var seeULaterTextColor = "red";
 
 audioElements.forEach(function (audio, index) {
