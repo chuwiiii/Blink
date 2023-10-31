@@ -14,5 +14,14 @@
         text-align: left;
         z-index: 2;
     }
-    
+    nav .fa{
+        display: block;
+        color: #ffff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }.Blacknav-link ul li{
+        display: block;
+    }
 }
