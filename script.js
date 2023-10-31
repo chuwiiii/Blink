@@ -265,7 +265,7 @@ audioElements.forEach(function (audio, index) {
 
         // Check the current time and apply or remove the text color accordingly
         if (audio.currentTime >= pinkVenomTime) {
-            document.getElementById("kickIt).style.color = kickItTextColor;
+            document.getElementById("kickIt").style.color = kickItTextColor;
         } else {
             document.getElementById("kickIt").style.color = "black";
         }
@@ -288,7 +288,7 @@ audioElements.forEach(function (audio, index) {
 
         // Check the current time and apply or remove the text color accordingly
         if (audio.currentTime >= hopeNotTime) {
-            document.getElementById("hopeNot).style.color = hopeNotTextColor;
+            document.getElementById("hopeNot").style.color = hopeNotTextColor;
         } else {
             document.getElementById("hopeNot").style.color = "black";
         }
