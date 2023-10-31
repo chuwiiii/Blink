@@ -1,7 +1,9 @@
-* {
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+}
+body{
+    background-color: #E89EB1;
 }
 a {
     position: absolute;
@@ -17,7 +19,6 @@ a img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #E89EB1;
     position: relative;
     width: 100%;
 }
@@ -40,16 +41,17 @@ a img {
     left: 10px;
 }
 .nav {
-    display: flex;
-    padding: 2% 70%;
-    justify-content: space-between;
-    align-items: center; 
+  display: flex;
+  padding: 2% 70%;
+  justify-content: space-between;
+  align-items: center;
+  
 }
 .content {
     margin-right: 220px; /* spacing para sa menu*/
 }
 nav img {
-    width: 150px;
+  width: 150px;
 }
 .nav-links {
     position: fixed;
@@ -70,10 +72,10 @@ nav img {
     padding-top: 50%;
 }
 .nav-links ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 25px 25px 25px 80px;
-    position: relative;
+  list-style: none;
+  display: inline-block;
+  padding: 25px 25px 25px 80px;
+  position: relative;
 }
 .nav-links ul li a{
     color: #E89EB1;
@@ -86,7 +88,7 @@ nav img {
     height: 2px;
     background: #000000;
     display: block;
-     margin: auto;
+    margin: auto;
     transition: 0.5s;
 }
 .nav-links ul li:hover::after{
@@ -101,9 +103,42 @@ nav img {
     padding-top: 12%;
 }
 h1{
-  color: black;
+  color: #000000;
   font-size: 36px;
   font-weight: 600;
+}
+h2{
+    color: #bc1f7d;
+    font-size: 36px;
+    font-weight: 600;
+  }
+.info-table {
+    margin: 0 auto;
+
+    border-collapse: collapse;
+    text-align: left;
+    width: 30%; /* gap ng column */
+}
+  
+.info-table td {
+    padding: 10px;
+}
+  
+.info-table .pinkStrong {
+    color: #bc1f7d;
+    font-weight: bold;
+}
+
+.info-table td {
+    padding:10 px;
+}
+
+.info-table .pinkStrong {
+    color: #d31877;
+    font-weight: bold;
+  }
+  .text-box {
+    text-align: center;
 }
 .text-box img {
     max-width: 40%;
@@ -127,99 +162,26 @@ h1{
     color: black;
     font-weight: 700;
 }
-.hero-btn{
+
+.blackBox {
     display: inline-block;
-    text-decoration: none;
-    color: black;
-    border: 1px solid black;
-    padding:  12px  34px;
-    font-size: 15px;
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-}
-.hero-btn:hover{
-    border: 1px solid white;
-    background: white;
-    transition: 0.5s;
-}
-
-/*-----SOCIAL MEDIA HANDLE OF BP-----*/
-.wrapper {
-    display: inherit;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 50px;
-  }
-  
-  .button {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
     text-align: center;
-    background-color: #f2f2f2;
-    padding: 10px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease-in-out;
-    cursor: pointer;
-    width: 100px;
-  }
-  
-  .button:hover {
-    background-color: #e0e0e0;
-  }
-  
-  .icon {
-    font-size: 36px;
-    margin-bottom: 10px;
-  }
-  
-  span {
-    font-size: 25px;
-    font-weight: bold;
-    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.25em;
     text-decoration: none;
-  }
-  
-  .button:nth-child(1) {
-    background-color: #E89EB1;
-    color: black;
-  }
-  
-  .button:nth-child(2) {
-    background-color: #E89EB1;
-    color: black;
-  }
-  
-  .button:nth-child(3) {
-    background-color: #E89EB1;
-    color: black;
-  }
-  
-  .button:nth-child(4) {
-    background-color: #E89EB1;
-    color: black;
-  }
-
-
-  .button .button span {
-    display: none;
-  }
-  
-  .button:hover .button span {
-    display: block;
+    border-radius: 0.35em;
+    border: 0;
+    outline: 0;
+    padding: 2m 2em 2em 2em;
+    font-size: 1em;
+    min-height: 2em;
+    line-height: 2em;
+    width: 100%;
+    background-color: #d31877;
     color: #000000;
-  }
+}
+.text-box .blackBox{
+    color:#000000
+}
 
-  a.FBbutton{
-    position: relative;
-  }
-  a.TWTbutton{
-    position: relative;
-  }
-  a.IGbutton{
-    position: relative;
-  }
-  a.YTbutton{
-    position: relative;
-  }
