@@ -1,7 +1,6 @@
 //navigation menu
 var navLinks = document.getElementById("navLinks");
 
-
 function hideMenuOnLoad() {
     navLinks.style.right = "-200px";
 }
@@ -15,6 +14,22 @@ function openMenu() {
 function hideMenu() {
     navLinks.style.right = "-200px";
 }
+
+// Black navigation menu
+var BlacknavLinks = document.getElementById("BlacknavLinks");
+
+function toggleMenu() {
+  if (BlacknavLinks.style.right === "-200px" || !BlacknavLinks.style.right) {
+    BlacknavLinks.style.right = "0";
+  } else {
+    BlacknavLinks.style.right = "-200px";
+  }
+}
+
+// Call the function to hide the menu on page load
+window.addEventListener('load', function() {
+  BlacknavLinks.style.right = "-200px";
+});
 
 // Audio Function
 //For play/pause hover
