@@ -69,3 +69,7 @@ h3{
     cursor: pointer;
     width: 100px;
 }
+
+.memberoButton:hover {
+    background-color: #e0e0e0;
+  }
