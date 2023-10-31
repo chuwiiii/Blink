@@ -1,117 +1,226 @@
-.members {
-    background-color: black;
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+  }
+
+/* navigation */
+a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+}
+a img {
+    width: 50%; 
+    height: auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E89EB1;
+    position: relative;
+    width: 100%;
+}
+.header i.fas.fa-bars {
+    border-radius: 50%;
+    color: black;
+    height: 20%;
+    font-size: 50px;
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    z-index: 1;
+}
+.header i.fas.fa-times-circle {
+    color: #E89EB1;
+    height: 20%;
+    font-size: 50px;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.nav {
+    display: flex;
+    padding: 2% 70%;
+    justify-content: space-between;
+    align-items: center;
+    
+  }
+  .content {
+      margin-right: 220px; /* spacing para sa menu*/
+  }
+  nav img {
+    width: 150px;
+  }
+  .nav-links {
+      position: fixed;
+      background: rgb(0, 0, 0);
+      height: 100vh;
+      width: 200px;
+      top: 0;
+      right: 0;
+      text-align: left;
+      z-index: 2;
+      transition: 0.5s;
+  }
+  .nav-links ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 50%;
+  }
+  .nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 25px 25px 25px 80px;
+    position: relative;
+  }
+  .nav-links ul li a{
+      color: #E89EB1;
+      text-decoration: none;
+      font-size: 30px;
+  }
+  .nav-links ul li::after{
+      content: '';
+      width: 0%;
+      height: 2px;
+      background: #000000;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+  }
+  .nav-links ul li:hover::after{
+      width: 100%;
+      transition: 0.5s;
+  }
+  h1{
+    color: gray;
+    font-size: 36px;
+    font-weight: 600;
+
+  }
+  /*-----ALBUMS-----*/
+.albums{
+    background-color: #E89EB1;
     text-align: center;
     padding: 250px 0;
     padding-top: 12%;
 }
-h2{
-    color: #E89EB1;
-    font-size: 36px;
-    font-weight: 600;
-}
-p{
-    color: #E89EB1;
+p1{
+    color: black;
     font-size: 20px;
     font-weight: 200;
     line-height: 22px;
-    padding: 20px;
+    padding: 0;
+    TEXT-ALIGN: center;
 }
 .row{
     margin: 0%;
     display: flexbox;
-    justify-content: center;
+    justify-content: space-between;
 }
-.members-col img {
-    max-width: 30%;
-    height: 30%;
-    box-shadow: -15px 10px #E89EB1;
-}
-.members-col:hover img {
-    box-shadow: 0 0 20px 0px #E89EB1;
-}
-.members-col {
-    flex-basis: calc(33.33% - 20px);
-    background: black;
+.albums-col{
+    flex-basis: 50%;
     border-radius: 10px;
-    margin: 15px;
+    margin-bottom: 5%;
     padding: 10px 5px;
     box-sizing: border-box;
     transition: 0.5s;
-    position: relative;
 }
-h3{
-    color: #E89EB1;
-    font-size: 30px;
+
+.albums-col img{
+    box-shadow: -15px 10px black;
+}
+h4{
+    color: black;
+    font-size: 40px;
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
-.members-col:hover{
-    box-shadow: 0 0 20px 0px #E89EB1;
-}
-
-.memberWrapper {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    padding-top: 0px;
+#bornPinkAlbum {
+    transition: transform 0.5s ease-in-out;
   }
-
-.memberButton {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background-color: #f2f2f2;
-    padding: 10px;
-    border-radius: 10px;
-    transition: background-color 0.3s ease-in-out;
-    cursor: pointer;
-    width: 100px;
-}
-
-.memberoButton:hover {
-    background-color: #e0e0e0;
-  }
-
-.memberIcon {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.memberspan {
-    font-size: 20px;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-  }
-
-.memberButton:nth-child(1) {
-    background-color: black;
-    color: #E89EB1;
-  }
-
-.memberButton:nth-child(2) {
-    background-color: black;
-    color: #E89EB1;
-  }
-
-.memberButton:nth-child(3) {
-    background-color: black;
-    color: #E89EB1;
+  .albums-col:hover{
+      transform: scale(1.20);
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
   }
   
-.memberButton:nth-child(4) {
-    background-color: black;
-    color: #E89EB1;
+  #KTL{
+      cursor: pointer;
   }
-
- a.memberFB{
-    position: relative;
+  #SQ{
+      cursor: pointer;
   }
- a.memberIG{
-    position: relative;
+  #SOLO{
+      cursor: pointer;
   }
- a.memberYT{
-    position: relative;
+  #R{
+      cursor: pointer;
+  }
+  #BP{
+      cursor: pointer;
+  }
+  #ME{
+      cursor: pointer;
+  }
+  #LL{
+      cursor: pointer;
+  }
+  
+  #progress {
+    -webkit-appearance: none;
+    text-align: center;
+    width: 200px;
+    height: 6px;
+    background: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0px;
+    outline: none; /* Add this line to remove default focus styling */
+  }
+  
+  #progress::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #ed5077;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
+  }
+  
+  /* Add a hover style to change the thumb color on hover */
+  #progress:hover::-webkit-slider-thumb {
+    background: #ff199c; /* Change the color as desired */
+  }
+  .audio-bar{
+  
+      text-align: center;
+      height: 5vh;
+      padding-top: -100px;
+  }
+  
+  
+  
+  .song-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #prev-song {
+    transform: translateX(-100%);
+  }
+  
+  #current-song {
+    transform: translateX(0);
+  }
+  
+  #next-song {
+    transform: translateX(100%);
   }
