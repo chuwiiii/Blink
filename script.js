@@ -111,7 +111,7 @@ document.querySelectorAll('.play-button').forEach(function (image) {
             { id: "ddudu", start: 0.4, end: 186 },
             { id: "foreverYoung", start: 186, end: 386 },
             { id: "really", start: 386, end: 590 },
-            { id: "seeULater", start: 590, end: 840 }
+            { id: "seeULater", start: 590, end: 841 }
         ],
         KTLAlbum: [
             { id: "killThislove", start: 0.4, end: 189 },
