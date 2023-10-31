@@ -90,3 +90,8 @@ h3{
     background-color: black;
     color: #E89EB1;
   }
+
+.memberButton:nth-child(2) {
+    background-color: black;
+    color: #E89EB1;
+  }
