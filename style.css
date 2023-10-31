@@ -193,6 +193,15 @@ h4{
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
 }
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background:#ed5077; 
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
+}
 .audio-bar{
 
     text-align: center;

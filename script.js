@@ -186,8 +186,8 @@ audioElements.forEach(function (audio, index) {
 });
 
 //AIIYL
-var AIIYLTime = 0;
-var transitionBackTime = 2.9;
+var AIIYLTime = 841;
+var transitionBackTime = 845;
 var AIIYLTextColor = "red";
 
 audioElements.forEach(function (audio, index) {
