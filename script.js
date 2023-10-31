@@ -20,8 +20,8 @@ function hideMenu() {
 let progress = document.getElementById("progress");
 
 var audioElements = [
-    document.getElementById("KTLAlbum"),
     document.getElementById("SQAlbum"),
+    document.getElementById("KTLAlbum"),
     document.getElementById("SOLOAlbum"),
     document.getElementById("RAlbum"),
     document.getElementById("BPAlbum"),
@@ -30,8 +30,8 @@ var audioElements = [
 ];
 
 var playButtons = [
-    document.getElementById("KTL"),
     document.getElementById("SQ"),
+    document.getElementById("KTL"),
     document.getElementById("SOLO"),
     document.getElementById("R"),
     document.getElementById("BP"),
