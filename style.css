@@ -21,6 +21,7 @@ h2{
   }
 .info-table {
     margin: 0 auto;
+
     border-collapse: collapse;
     text-align: left;
     width: 30%; /* gap ng column */
@@ -33,6 +34,18 @@ h2{
 .info-table .pinkStrong {
     color: #bc1f7d;
     font-weight: bold;
+}
+
+.info-table td {
+    padding:10 px;
+}
+
+.info-table .pinkStrong {
+    color: #bc1f7d;
+    font-weight: bold;
+  }
+  .text-box {
+    text-align: center;
 }
 .text-box img {
     max-width: 40%;
