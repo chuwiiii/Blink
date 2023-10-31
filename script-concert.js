@@ -8,3 +8,8 @@ prev.addEventListener('click', function(){
     degrees += 45;
     box.style = `transform: perspective(1000px) rotateY(${degrees}deg)`;
 })
+
+next.addEventListener('click', function(){
+    degrees -= 45;
+    box.style = `transform: perspective(1000px) rotateY(${degrees}deg)`;
+})
