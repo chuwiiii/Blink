@@ -161,3 +161,21 @@ h2{
     font-weight: 700;
 }
 
+.boxLinkPink {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+    border-radius: 0.35em;
+    border: 0;
+    outline: 0;
+    padding: 2m 2em 2em 2em;
+    font-size: 1em;
+    min-height: 2em;
+    line-height: 2em;
+    width: 100%;
+    background-color: #e4aebe;
+    color: #191a1c;
+}
