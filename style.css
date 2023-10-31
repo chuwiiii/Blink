@@ -161,7 +161,7 @@ h2{
     font-weight: 700;
 }
 
-.boxLinkPink {
+.blackBox {
     display: inline-block;
     text-align: center;
     text-transform: uppercase;
@@ -176,6 +176,6 @@ h2{
     min-height: 2em;
     line-height: 2em;
     width: 100%;
-    background-color: #e4aebe;
-    color: #191a1c;
+    background-color: #5f687b;
+    color: #bc1f7d;
 }
