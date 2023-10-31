@@ -181,6 +181,125 @@ a img {
     color:#000000
 }
 
+/*-------MEMBERS-------*/
+.members {
+  background-color: black;
+  text-align: center;
+  padding: 250px 0;
+  padding-top: 12%;
+}
+h2{
+  color: #E89EB1;
+  font-size: 36px;
+  font-weight: 600;
+}
+p{
+  color: #E89EB1;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 22px;
+  padding: 20px;
+}
+.row{
+  margin: 0%;
+  display: flexbox;
+  justify-content: center;
+}
+.members-col img {
+  max-width: 30%;
+  height: 30%;
+  box-shadow: -15px 10px #E89EB1;
+}
+.members-col:hover img {
+  box-shadow: 0 0 20px 0px #E89EB1;
+}
+.members-col {
+  flex-basis: calc(33.33% - 20px);
+  background: black;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 10px 5px;
+  box-sizing: border-box;
+  transition: 0.5s;
+  position: relative;
+}
+h3{
+  color: #E89EB1;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.members-col:hover{
+  box-shadow: 0 0 20px 0px #E89EB1;
+}
+
+.memberWrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 0px;
+}
+
+.memberButton {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #f2f2f2;
+  padding: 10px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+  width: 100px;
+}
+
+.memberoButton:hover {
+  background-color: #e0e0e0;
+}
+
+.memberIcon {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.memberspan {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  text-decoration: none;
+}
+
+.memberButton:nth-child(1) {
+  background-color: black;
+  color: #E89EB1;
+}
+
+.memberButton:nth-child(2) {
+  background-color: black;
+  color: #E89EB1;
+}
+
+.memberButton:nth-child(3) {
+  background-color: black;
+  color: #E89EB1;
+}
+
+.memberButton:nth-child(4) {
+  background-color: black;
+  color: #E89EB1;
+}
+
+a.memberFB{
+  position: relative;
+}
+a.memberIG{
+  position: relative;
+}
+a.memberYT{
+  position: relative;
+}
+
 
   /*-----ALBUMS-----*/
 
