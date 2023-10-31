@@ -17,7 +17,7 @@ body{
     height: 200px;
     transform-style: preserve-3d;
     transition: 1.5s;
-    transform: perspective(1000px);
+    transform: perspective(1000px) rotateY(0deg);
 }
 .box span{
     position: absolute;
