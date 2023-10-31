@@ -141,39 +141,37 @@ h4{
     font-weight: 600;
     margin: 10px 0;
 }
-
-.albums-col:hover{
-    transform: scale(1.20);
-    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
-}
-
 #bornPinkAlbum {
     transition: transform 0.5s ease-in-out;
-}
-
-#KTL{
-    cursor: pointer;
-}
-#SQ{
-    cursor: pointer;
-}
-#SOLO{
-    cursor: pointer;
-}
-#R{
-    cursor: pointer;
-}
-#BP{
-    cursor: pointer;
-}
-#ME{
-    cursor: pointer;
-}
-#LL{
-    cursor: pointer;
-}
-
-#progress{
+  }
+  .albums-col:hover{
+      transform: scale(1.20);
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+  }
+  
+  #KTL{
+      cursor: pointer;
+  }
+  #SQ{
+      cursor: pointer;
+  }
+  #SOLO{
+      cursor: pointer;
+  }
+  #R{
+      cursor: pointer;
+  }
+  #BP{
+      cursor: pointer;
+  }
+  #ME{
+      cursor: pointer;
+  }
+  #LL{
+      cursor: pointer;
+  }
+  
+  #progress {
     -webkit-appearance: none;
     text-align: center;
     width: 200px;
@@ -182,48 +180,47 @@ h4{
     border-radius: 4px;
     cursor: pointer;
     margin: 20px 0px;
-}
-
-#progress::-webkit-slider-thumb{
+    outline: none; /* Add this line to remove default focus styling */
+  }
+  
+  #progress::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background:#ed5077; 
+    background: #ed5077;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
-}
-#progress::-webkit-slider-thumb{
-    -webkit-appearance: none;
-    background:#ed5077; 
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    cursor: pointer;
-    box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
-}
-.audio-bar{
-
-    text-align: center;
-    height: 5vh;
-    padding-top: -100px;
-}
-
-.song-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-#prev-song {
-  transform: translateX(-100%);
-}
-
-#current-song {
-  transform: translateX(0);
-}
-
-#next-song {
-  transform: translateX(100%);
-}
+  }
+  
+  /* Add a hover style to change the thumb color on hover */
+  #progress:hover::-webkit-slider-thumb {
+    background: #ff199c; /* Change the color as desired */
+  }
+  .audio-bar{
+  
+      text-align: center;
+      height: 5vh;
+      padding-top: -100px;
+  }
+  
+  
+  
+  .song-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  #prev-song {
+    transform: translateX(-100%);
+  }
+  
+  #current-song {
+    transform: translateX(0);
+  }
+  
+  #next-song {
+    transform: translateX(100%);
+  }
