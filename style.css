@@ -127,3 +127,19 @@ h1{
     color: black;
     font-weight: 700;
 }
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding:  12px  34px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid white;
+    background: white;
+    transition: 0.5s;
+}
