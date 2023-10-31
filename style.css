@@ -96,7 +96,7 @@ a img {
       width: 100%;
       transition: 0.5s;
   }
-/*-----NAV MENU FOR MEMBERS AND ABOUT-----*/
+/*-----NAV MENU FOR MEMBERS-----*/
 .Blackheader {
   display: flex;
   justify-content: space-between;
@@ -178,7 +178,57 @@ position: relative;
   width: 100%;
   transition: 0.5s;
 }
-
+/*----------HOME----------*/
+.text-box {
+  background-color: #E89EB1;
+  position: relative;
+  text-align: center;
+  height: 150vh;
+  padding-top: 12%;
+}
+h1{
+color: black;
+font-size: 36px;
+font-weight: 600;
+}
+.text-box img {
+  max-width: 40%;
+  width: auto;
+  height: auto;
+  max-height: 50vh;
+  box-shadow: -15px 10px black;
+}
+.text-box h1{
+  font-size: 36px;
+  font-weight: 600;
+}
+.text-box p{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: black;
+  font-weight: 700;
+}
+.hero-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  border: 1px solid black;
+  padding:  12px  34px;
+  font-size: 15px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.hero-btn:hover{
+  border: 1px solid white;
+  background: white;
+  transition: 0.5s;
+}
 
   /*--------ABOUT---------*/
   h2{
