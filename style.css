@@ -105,3 +105,13 @@ h3{
     background-color: black;
     color: #E89EB1;
   }
+
+ a.memberFB{
+    position: relative;
+  }
+ a.memberIG{
+    position: relative;
+  }
+ a.memberYT{
+    position: relative;
+  }
