@@ -1,12 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
-body{
-    background: #fff;
-}
-
 section{
     position: relative;
     display: flex;
@@ -27,27 +22,26 @@ section video{
     object-fit: cover;
     pointer-events: none;
 }
-
-section h1{
-    position: relative
-    color #000;
+h1{
+    position: relative;
+    color: #fff;
     font-size: 3em;
 }
-
-section p{
+p{
     position: relative;
-    color: #000;
+    color: #fff;
     font-size: 1.2em;
 }
-
 .pink{
+    height: 100vh;
     background: #E89EB1;
+    justify-content: center;
 }
-
 .black{
+    height: 100vh;
     background: #000;
+    justify-self: center;
 }
-
 .curve{
     position: absolute;
     height: 225.px;
