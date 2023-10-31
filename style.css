@@ -119,18 +119,10 @@ a img {
   }
   /*-----ALBUMS-----*/
 
-.glow {
-    animation: glow 1s ease-in-out infinite alternate;
+.circle {
+    border-radius: 50%;
 }
 
-@keyframes glow {
-    from {
-        box-shadow: 0 0 5px rgba(237, 80, 119, 0.7), 0 0 10px rgba(237, 80, 119, 0.7), 0 0 15px rgba(237, 80, 119, 0.7), 0 0 20px rgba(237, 80, 119, 0.7);
-    }
-    to {
-        box-shadow: 0 0 10px rgba(237, 80, 119, 0.7), 0 0 20px rgba(237, 80, 119, 0.7), 0 0 30px rgba(237, 80, 119, 0.7), 0 0 40px rgba(237, 80, 119, 0.7);
-    }
-}
 .albums{
     background-color: #E89EB1;
     text-align: center;

@@ -18,85 +18,87 @@ function hideMenu() {
 
 // Audio Function
 
-//glow effect
-let audioElement = document.getElementById('SQAlbum');
-let albumElement = document.getElementById('SQ');
+// circle
+let audioElementf = document.getElementById('SQAlbum');
+let albumImageElementf = document.querySelector('#SQ img');
 
-audioElement.addEventListener('play', function() {
-    albumElement.classList.add('glow');
+audioElementf.addEventListener('play', function() {
+    albumImageElementf.classList.add('circle');
 });
 
-audioElement.addEventListener('pause', function() {
-    albumElement.classList.remove('glow');
+audioElementf.addEventListener('pause', function() {
+    albumImageElementf.classList.remove('circle');
 });
 
-let audioElement1 = document.getElementById('KTLAlbum');
-let albumElement1 = document.getElementById('KTL');
+let audioElementf1 = document.getElementById('KTLAlbum');
+let albumImageElementf1 = document.querySelector('#KTL img');
 
-audioElement1.addEventListener('play', function() {
-    albumElement1.classList.add('glow');
+audioElementf1.addEventListener('play', function() {
+    albumImageElementf1.classList.add('circle');
 });
 
-audioElement1.addEventListener('pause', function() {
-    albumElement1.classList.remove('glow');
+audioElementf1.addEventListener('pause', function() {
+    albumImageElementf1.classList.remove('circle');
 });
 
-let audioElement2 = document.getElementById('SOLOAlbum');
-let albumElement2 = document.getElementById('SOLO');
+let audioElementf2 = document.getElementById('SOLOAlbum');
+let albumImageElementf2 = document.querySelector('#SOLO img');
 
-audioElement2.addEventListener('play', function() {
-    albumElement2.classList.add('glow');
+audioElementf2.addEventListener('play', function() {
+    albumImageElementf2.classList.add('circle');
 });
 
-audioElement2.addEventListener('pause', function() {
-    albumElement2.classList.remove('glow');
+audioElementf2.addEventListener('pause', function() {
+    albumImageElementf2.classList.remove('circle');
+});
+
+let audioElementf3 = document.getElementById('RAlbum');
+let albumImageElementf3 = document.querySelector('#R img');
+
+audioElementf3.addEventListener('play', function() {
+    albumImageElementf3.classList.add('circle');
+});
+
+audioElementf3.addEventListener('pause', function() {
+    albumImageElementf3.classList.remove('circle');
 });
 
 
-let audioElement3 = document.getElementById('BPAlbum');
-let albumElement3 = document.getElementById('BP');
+let audioElementf4 = document.getElementById('BPAlbum');
+let albumImageElementf4 = document.querySelector('#BP img');
 
-audioElement3.addEventListener('play', function() {
-    albumElement3.classList.add('glow');
+audioElementf4.addEventListener('play', function() {
+    albumImageElementf4.classList.add('circle');
 });
 
-audioElement3.addEventListener('pause', function() {
-    albumElement3.classList.remove('glow');
+audioElementf4.addEventListener('pause', function() {
+    albumImageElementf4.classList.remove('circle');
 });
 
-let audioElement4 = document.getElementById('MEAlbum');
-let albumElement4 = document.getElementById('ME');
 
-audioElement4.addEventListener('play', function() {
-    albumElement4.classList.add('glow');
+let audioElementf5 = document.getElementById('MEAlbum');
+let albumImageElementf5 = document.querySelector('#ME img');
+
+audioElementf5.addEventListener('play', function() {
+    albumImageElementf5.classList.add('circle');
 });
 
-audioElement4.addEventListener('pause', function() {
-    albumElement4.classList.remove('glow');
+audioElementf5.addEventListener('pause', function() {
+    albumImageElementf5.classList.remove('circle');
 });
 
-let audioElement5 = document.getElementById('LLAlbum');
-let albumElement5 = document.getElementById('LL');
 
-audioElement5.addEventListener('play', function() {
-    albumElement5.classList.add('glow');
+
+let audioElementf6 = document.getElementById('LLAlbum');
+let albumImageElementf6 = document.querySelector('#LL img');
+
+audioElementf6.addEventListener('play', function() {
+    albumImageElementf6.classList.add('circle');
 });
 
-audioElement5.addEventListener('pause', function() {
-    albumElement5.classList.remove('glow');
+audioElementf6.addEventListener('pause', function() {
+    albumImageElementf6.classList.remove('circle');
 });
-
-let audioElement6 = document.getElementById('RAlbum');
-let albumElement6 = document.getElementById('R');
-
-audioElement6.addEventListener('play', function() {
-    albumElement6.classList.add('glow');
-});
-
-audioElement6.addEventListener('pause', function() {
-    albumElement6.classList.remove('glow');
-});
-
 
 
 document.querySelectorAll('.play-button').forEach(function (image) {
