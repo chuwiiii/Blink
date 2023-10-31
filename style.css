@@ -133,9 +133,55 @@ a img {
     color: #d31877;
     font-weight: bold;
   }
+  .text-box {
+    text-align: center;
+}
+.text-box img {
+    max-width: 40%;
+    width: auto;
+    height: auto;
+    max-height: 50vh;
+    box-shadow: -15px 10px black;
+}
+.text-box h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.text-box p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+    font-weight: 700;
+}
+
+.blackBox {
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+    border-radius: 0.35em;
+    border: 0;
+    outline: 0;
+    padding: 2m 2em 2em 2em;
+    font-size: 1em;
+    min-height: 2em;
+    line-height: 2em;
+    width: 100%;
+    background-color: #d31877;
+    color: #000000;
+}
+.text-box .blackBox{
+    color:#000000
+}
 
 
-  
   /*-----ALBUMS-----*/
 
 .circle {
