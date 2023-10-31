@@ -171,7 +171,7 @@ h4{
       cursor: pointer;
   }
   
-  #progress {
+  #progressSQ {
     -webkit-appearance: none;
     text-align: center;
     width: 200px;
@@ -180,10 +180,10 @@ h4{
     border-radius: 4px;
     cursor: pointer;
     margin: 20px 0px;
-    outline: none; /* Add this line to remove default focus styling */
+    outline: none; 
   }
   
-  #progress::-webkit-slider-thumb {
+  #progressSQ::-webkit-slider-thumb {
     -webkit-appearance: none;
     background: #ed5077;
     width: 20px;
@@ -193,10 +193,38 @@ h4{
     box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
   }
   
-  /* Add a hover style to change the thumb color on hover */
-  #progress :hover::-webkit-slider-thumb {
-    background: #ff199c; /* Change the color as desired */
+ 
+  #progressSQ :hover::-webkit-slider-thumb {
+    background: #ff199c;
   }
+
+  #progressKTL {
+    -webkit-appearance: none;
+    text-align: center;
+    width: 200px;
+    height: 6px;
+    background: black;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 20px 0px;
+    outline: none; 
+  }
+  
+  #progressKTL::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #ed5077;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
+  }
+  
+ 
+  #progressKTL :hover::-webkit-slider-thumb {
+    background: #ff199c;
+  }
+  
   .audio-bar{
   
       text-align: center;
