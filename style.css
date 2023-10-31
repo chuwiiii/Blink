@@ -19,35 +19,52 @@ h2{
     font-size: 36px;
     font-weight: 600;
   }
-  .info-table {
-    margin: 0 auto;
-    border-collapse: collapse;
-    text-align: left; 
-    width: 30%; /* lapit ng cells sa isa't-isa */
-  }
-  
-  .info-table td {
-    padding: 10px;
-  }
-  
-  .info-table .pinkStrong {
+  td.pinkStrong {
     color: #bc1f7d;
-    font-weight: bold;
-  }
-  
-  .text-box {
+    vertical-align: middle;
+    font-size: 12.5pt;
+    line-height: 1.95em;
+    letter-spacing: 0.025em;
     text-align: center;
-  }
-  
-  .text-box h1 {
+    margin-left: auto;
+    margin-right: auto;
+} 
+td {
+    color: #000000;
+    vertical-align: middle;
+    font-size: 13pt;
+    line-height: 1.75em;
+    letter-spacing: 0.025em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}  
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-indent: initial;
+    text-align: center;
+}
+.text-box img {
+    max-width: 40%;
+    width: auto;
+    height: auto;
+    max-height: 50vh;
+    box-shadow: -15px 10px black;
+}
+.text-box h1{
     font-size: 36px;
     font-weight: 600;
-  }
-  
-  .text-box p {
+}
+.text-box p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
     font-size: 18px;
     line-height: 1.5;
     color: black;
     font-weight: 700;
-  }
-  
+}
