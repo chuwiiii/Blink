@@ -102,6 +102,40 @@ a img {
     font-weight: 600;
 
   }
+  /*--------ABOUT---------*/
+  h2{
+    color: #bc1f7d;
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .info-table {
+    margin: 0 auto;
+
+    border-collapse: collapse;
+    text-align: left;
+    width: 30%; /* gap ng column */
+}
+  
+.info-table td {
+    padding: 10px;
+}
+  
+.info-table .pinkStrong {
+    color: #bc1f7d;
+    font-weight: bold;
+}
+
+.info-table td {
+    padding:10 px;
+}
+
+.info-table .pinkStrong {
+    color: #d31877;
+    font-weight: bold;
+  }
+
+
+  
   /*-----ALBUMS-----*/
 
 .circle {
