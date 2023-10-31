@@ -35,10 +35,10 @@
         <h1>Albums</h1>
         <div class="row">
           <div class="albums-col">
-              <img src="./Assets/square up.png" id="SQ">
+              <img src="./Assets/square up.png" id="SQ" class="play-button">
               <h4>SQUARE UP</h4>
               <div class="audio-bar">
-                <input type="range" value="0" id="progress">
+                <input type="range" value="0" id="progressSQ">
               </div>
               <p1>
                 <span id="ddudu">Ddu-Du Ddu-Du (뚜두뚜두)</span><br>
@@ -48,11 +48,11 @@
               </p1>
             </div>
             <div class="albums-col">
-              <img src="./Assets/kill this love pink.png" id="KTL">
-              <div class="audio-bar">
-                <input type="range" value="0" id="progress">
-            </div>
+              <img src="./Assets/kill this love pink.png" id="KTL" class="play-button">
               <h4>KILL THIS LOVE</h4>
+              <div class="audio-bar">
+                <input type="range" value="0" id="progressKTL">
+            </div>
               <p1>
                 <span id="killThislove">Kill This Love</span><br>
                 <span id="DKWtD">Don't Know What to Do</span><br>
@@ -146,16 +146,7 @@
       <audio id="LLAlbum">
         <source src="./Assets/[Full Album] LALISA.mp3" type="audio/mp3">
       </audio>
-      
-      <button id="KTL">Play</button>
-      <button id="SQ">Play</button>
-      <button id="SOLO">Play</button>
-      <button id="R">Play</button>
-      <button id="BP">Play</button>
-      <button id="ME">Play</button>
-      <button id="LL">Play</button>
-      <input type="range" id="progress" min="0" value="0">
-    
+
 </body>
   <script src="script.js"></script>
 </html>

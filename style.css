@@ -194,7 +194,7 @@ h4{
   }
   
   /* Add a hover style to change the thumb color on hover */
-  #progress:hover::-webkit-slider-thumb {
+  #progress :hover::-webkit-slider-thumb {
     background: #ff199c; /* Change the color as desired */
   }
   .audio-bar{
