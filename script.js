@@ -1,4 +1,6 @@
-//navigation menu
+/////////////////////////////////
+//       navigation menu      //
+///////////////////////////////
 var navLinks = document.getElementById("navLinks");
 
 function hideMenuOnLoad() {
@@ -15,21 +17,10 @@ function hideMenu() {
     navLinks.style.right = "-200px";
 }
 
-// Black navigation menu
-var BlacknavLinks = document.getElementById("BlacknavLinks");
 
-function toggleMenu() {
-  if (BlacknavLinks.style.right === "-200px" || !BlacknavLinks.style.right) {
-    BlacknavLinks.style.right = "0";
-  } else {
-    BlacknavLinks.style.right = "-200px";
-  }
-}
-
-// Call the function to hide the menu on page load
-window.addEventListener('load', function() {
-  BlacknavLinks.style.right = "-200px";
-});
+////////////////////////////////////////////////////////////////
+//                         ALBUMS                            //
+///////////////////////////////////////////////////////////////
 
 // Audio Function
 //For play/pause hover
@@ -186,7 +177,7 @@ document.querySelectorAll('.play-button').forEach(function (image) {
         if (audioElement.paused) {
             stopAllAudio(); // Stop all other audio elements
             audioElement.play();
-            SQImage.title = "Pause";
+            SQImage.title = "Pause"; // for 'pause' upon hover sa image
             KTLImage.title = "Pause";
             SOLOImage.title = "Pause";
             RImage.title = "Pause";
@@ -195,7 +186,7 @@ document.querySelectorAll('.play-button').forEach(function (image) {
             LLImage.title = "Pause";
         } else {
             audioElement.pause();
-            SQImage.title = "Play";
+            SQImage.title = "Play"; // for 'play' text upon hover sa image
             KTLImage.title = "Play";
             SOLOImage.title = "Play";
             RImage.title = "Play";
