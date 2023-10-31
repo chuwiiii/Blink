@@ -88,7 +88,6 @@ audioElementf5.addEventListener('pause', function() {
 });
 
 
-
 let audioElementf6 = document.getElementById('LLAlbum');
 let albumImageElementf6 = document.querySelector('#LL img');
 
@@ -101,6 +100,7 @@ audioElementf6.addEventListener('pause', function() {
 });
 
 
+//Audio Function Progress Bar, Play/Pause
 document.querySelectorAll('.play-button').forEach(function (image) {
     var albumId = image.id + 'Album';
     var audioElement = document.getElementById(albumId);
