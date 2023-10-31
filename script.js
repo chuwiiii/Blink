@@ -300,7 +300,7 @@ audioElements.forEach(function (audio, index) {
     });
 });
 
-
+//dduduRemix
 var pinkVenomTime = 0;
 var transitionBackTime = 2.9;
 var pinkVenomTextColor = "red";
@@ -323,6 +323,7 @@ audioElements.forEach(function (audio, index) {
     });
 });
 
+//solo
 var pinkVenomTime = 0;
 var transitionBackTime = 2.9;
 var pinkVenomTextColor = "red";
@@ -345,6 +346,7 @@ audioElements.forEach(function (audio, index) {
     });
 });
 
+//soloIns
 var pinkVenomTime = 0;
 var transitionBackTime = 2.9;
 var pinkVenomTextColor = "red";
@@ -367,6 +369,7 @@ audioElements.forEach(function (audio, index) {
     });
 });
 
+//ontheGround
 var pinkVenomTime = 0;
 var transitionBackTime = 2.9;
 var pinkVenomTextColor = "red";
@@ -389,6 +392,7 @@ audioElements.forEach(function (audio, index) {
     });
 });
 
+//gone
 var pinkVenomTime = 0;
 var transitionBackTime = 2.9;
 var pinkVenomTextColor = "red";
