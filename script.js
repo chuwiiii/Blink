@@ -140,32 +140,32 @@ audioElements.forEach(function (audio, index) {
 });
 
 //really
-var pinkVenomTime = 0;
+var reallyTime = 0;
 var transitionBackTime = 2.9;
-var pinkVenomTextColor = "red";
+var reallyTextColor = "red";
 
 audioElements.forEach(function (audio, index) {
     audio.addEventListener("timeupdate", function () {
         progress.value = audio.currentTime;
 
         // Check the current time and apply or remove the text color accordingly
-        if (audio.currentTime >= pinkVenomTime) {
-            document.getElementById("pinkVenom").style.color = pinkVenomTextColor;
+        if (audio.currentTime >= reallyTime) {
+            document.getElementById("really").style.color = reallyTextColor;
         } else {
-            document.getElementById("pinkVenom").style.color = "black";
+            document.getElementById("really").style.color = "black";
         }
 
         // Check if the audio time is close to transitioning to the next song
         if (audio.currentTime >= transitionBackTime) {
-            document.getElementById("pinkVenom").style.color = "black";
+            document.getElementById("really").style.color = "black";
         }
     });
 });
 
 //seeULater
-var pinkVenomTime = 0;
+var seeULaterTime = 0;
 var transitionBackTime = 2.9;
-var pinkVenomTextColor = "red";
+var seeULaterTextColor = "red";
 
 audioElements.forEach(function (audio, index) {
     audio.addEventListener("timeupdate", function () {
@@ -173,14 +173,14 @@ audioElements.forEach(function (audio, index) {
 
         // Check the current time and apply or remove the text color accordingly
         if (audio.currentTime >= pinkVenomTime) {
-            document.getElementById("pinkVenom").style.color = pinkVenomTextColor;
+            document.getElementById("seeULater").style.color = seeULaterTextColor;
         } else {
-            document.getElementById("pinkVenom").style.color = "black";
+            document.getElementById("seeULater").style.color = "black";
         }
 
         // Check if the audio time is close to transitioning to the next song
         if (audio.currentTime >= transitionBackTime) {
-            document.getElementById("pinkVenom").style.color = "black";
+            document.getElementById("seeULater").style.color = "black";
         }
     });
 });
