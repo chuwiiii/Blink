@@ -176,6 +176,9 @@ h2{
     min-height: 2em;
     line-height: 2em;
     width: 100%;
-    background-color: #d31877;
+    background-color: #e4007c;
     color: #000000;
+}
+.text-box .blackBox{
+    color:#000000
 }
