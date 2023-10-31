@@ -94,47 +94,47 @@ let updateProgress = setInterval(function () {
 //song timeline
 
 //ddudu
-var pinkVenomTime = 0;
+var dduduTime = 0;
 var transitionBackTime = 2.9;
-var pinkVenomTextColor = "red";
+var dduduTextColor = "red";
 
 audioElements.forEach(function (audio, index) {
     audio.addEventListener("timeupdate", function () {
         progress.value = audio.currentTime;
 
         // Check the current time and apply or remove the text color accordingly
-        if (audio.currentTime >= pinkVenomTime) {
-            document.getElementById("pinkVenom").style.color = pinkVenomTextColor;
+        if (audio.currentTime >= dduduTime) {
+            document.getElementById("ddudu").style.color = dduduTextColor;
         } else {
-            document.getElementById("pinkVenom").style.color = "black";
+            document.getElementById("ddudu").style.color = "black";
         }
 
         // Check if the audio time is close to transitioning to the next song
         if (audio.currentTime >= transitionBackTime) {
-            document.getElementById("pinkVenom").style.color = "black";
+            document.getElementById("ddudu").style.color = "black";
         }
     });
 });
 
 //foreverYoung
-var pinkVenomTime = 0;
+var foreverYoungTime = 0;
 var transitionBackTime = 2.9;
-var pinkVenomTextColor = "red";
+var foreverYoungTextColor = "red";
 
 audioElements.forEach(function (audio, index) {
     audio.addEventListener("timeupdate", function () {
         progress.value = audio.currentTime;
 
         // Check the current time and apply or remove the text color accordingly
-        if (audio.currentTime >= pinkVenomTime) {
-            document.getElementById("pinkVenom").style.color = pinkVenomTextColor;
+        if (audio.currentTime >= foreverYoungTime) {
+            document.getElementById("foreverYoung").style.color = foreverYoungTextColor;
         } else {
-            document.getElementById("pinkVenom").style.color = "black";
+            document.getElementById("foreverYoung").style.color = "black";
         }
 
         // Check if the audio time is close to transitioning to the next song
         if (audio.currentTime >= transitionBackTime) {
-            document.getElementById("pinkVenom").style.color = "black";
+            document.getElementById("foreverYoung").style.color = "black";
         }
     });
 });
