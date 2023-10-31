@@ -202,11 +202,11 @@ h1{
   }
 
 
-  .IGbutton .button span {
+  .button .button span {
     display: none;
   }
   
-  .IGbutton:hover .button span {
+  .button:hover .button span {
     display: block;
     color: #000000;
   }
