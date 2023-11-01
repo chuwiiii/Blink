@@ -299,7 +299,7 @@ a.YTbutton {
 }
 
 /*--------ABOUT---------*/
-h2 {
+h1 {
   color: black;
   font-size: 36px;
   font-weight: 600;
@@ -356,10 +356,6 @@ h2 {
   color: black;
   font-weight: 700;
 }
-.about-col {
-  background-color: #e89eb1;
-}
-
 .blackBox {
   display: inline-block;
   text-align: center;
