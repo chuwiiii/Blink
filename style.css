@@ -505,20 +505,14 @@ h1 {
 }
 .circle {
   border-radius: 50%;
+  transform: scale(1);
+  transition: transform 0.6s ease;
 }
 .albums {
   background-color: #e89eb1;
   text-align: center;
   padding: 250px 0;
   padding-top: 12%;
-}
-p1 {
-  color: black;
-  font-size: 20px;
-  font-weight: 200;
-  line-height: 22px;
-  padding: 0;
-  text-align: center;
 }
 .row {
   margin: 0%;
@@ -549,10 +543,6 @@ h4 {
   font-weight: 600;
   margin: 10px 0;
 }
-#bornPinkAlbum {
-  transition: transform 0.5s ease-in-out;
-}
-
 #KTL {
   cursor: pointer;
 }
@@ -575,209 +565,3 @@ h4 {
   cursor: pointer;
 }
 
-#progressSQ {
-  -webkit-appearance: none;
-  text-align: center;
-  width: 200px;
-  height: 6px;
-  background: black;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 20px 0px;
-  outline: none;
-}
-
-#progressSQ::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: #ed5077;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
-}
-
-#progressSQ :hover::-webkit-slider-thumb {
-  background: #ff199c;
-}
-
-#progressKTL {
-  -webkit-appearance: none;
-  text-align: center;
-  width: 200px;
-  height: 6px;
-  background: black;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 20px 0px;
-  outline: none;
-}
-
-#progressKTL::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: #ed5077;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
-}
-
-#progressKTL :hover::-webkit-slider-thumb {
-  background: #ff199c;
-}
-
-#progressSOLO {
-  -webkit-appearance: none;
-  text-align: center;
-  width: 200px;
-  height: 6px;
-  background: black;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 20px 0px;
-  outline: none;
-}
-
-#progressSOLO::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: #ed5077;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
-}
-
-#progressSOLO :hover::-webkit-slider-thumb {
-  background: #ff199c;
-}
-
-#progressR {
-  -webkit-appearance: none;
-  text-align: center;
-  width: 200px;
-  height: 6px;
-  background: black;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 20px 0px;
-  outline: none;
-}
-
-#progressR::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: #ed5077;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
-}
-
-#progressR :hover::-webkit-slider-thumb {
-  background: #ff199c;
-}
-
-#progressBP {
-  -webkit-appearance: none;
-  text-align: center;
-  width: 200px;
-  height: 6px;
-  background: black;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 20px 0px;
-  outline: none;
-}
-
-#progressBP::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: #ed5077;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
-}
-
-#progressBP :hover::-webkit-slider-thumb {
-  background: #ff199c;
-}
-
-#progressME {
-  -webkit-appearance: none;
-  text-align: center;
-  width: 200px;
-  height: 6px;
-  background: black;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 20px 0px;
-  outline: none;
-}
-
-#progressME::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: #ed5077;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
-}
-
-#progressME :hover::-webkit-slider-thumb {
-  background: #ff199c;
-}
-
-#progressLL {
-  -webkit-appearance: none;
-  text-align: center;
-  width: 200px;
-  height: 6px;
-  background: black;
-  border-radius: 4px;
-  cursor: pointer;
-  margin: 20px 0px;
-  outline: none;
-}
-
-#progressLL::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background: #ed5077;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(222, 191, 191, 0.22);
-}
-
-#progressLL :hover::-webkit-slider-thumb {
-  background: #ff199c;
-}
-
-.audio-bar {
-  text-align: center;
-  height: 5vh;
-  padding-top: -100px;
-}
-
-.song-container {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out;
-}
-
-#prev-song {
-  transform: translateX(-100%);
-}
-
-#current-song {
-  transform: translateX(0);
-}
-
-#next-song {
-  transform: translateX(100%);
-}

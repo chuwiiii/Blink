@@ -24,15 +24,6 @@ function hideMenu() {
 
 // Audio Function
 //For play/pause hover
-const SQImage = document.getElementById("SQImage");
-const KTLImage = document.getElementById("KTLImage");
-const SOLOImage = document.getElementById("SOLOImage");
-const RImage = document.getElementById("RImage");
-const BPImage = document.getElementById("BPImage");
-const MEImage = document.getElementById("MEImage");
-const LLImage = document.getElementById("LLImage");
-
-
 // circle
 let audioElementf = document.getElementById('SQAlbum');
 let albumImageElementf = document.querySelector('#SQ img');
@@ -113,13 +104,10 @@ audioElementf6.addEventListener('play', function() {
 audioElementf6.addEventListener('pause', function() {
     albumImageElementf6.classList.remove('circle');
 });
-
-
-//Audio Function Progress Bar, Play/Pause
+// Define a function to set up audio elements, album images, and play buttons
 document.querySelectorAll('.play-button').forEach(function (image) {
     var albumId = image.id + 'Album';
     var audioElement = document.getElementById(albumId);
-    var progress = document.getElementById('progress' + image.id);
 
     var songIntervals = {
         SQAlbum: [
@@ -156,7 +144,6 @@ document.querySelectorAll('.play-button').forEach(function (image) {
         MEAlbum: [
             { id: "flower", start: 0.4, end: 173 },
             { id: "allEyesOnMe", start: 173, end: 335 }
-
         ],
         LLAlbum: [
             { id: "lalisa", start: 0.4, end: 198 },
@@ -177,61 +164,8 @@ document.querySelectorAll('.play-button').forEach(function (image) {
         if (audioElement.paused) {
             stopAllAudio(); // Stop all other audio elements
             audioElement.play();
-            SQImage.title = "Pause"; // for 'pause' upon hover sa image
-            KTLImage.title = "Pause";
-            SOLOImage.title = "Pause";
-            RImage.title = "Pause";
-            BPImage.title = "Pause";
-            MEImage.title = "Pause";
-            LLImage.title = "Pause";
         } else {
             audioElement.pause();
-            SQImage.title = "Play"; // for 'play' text upon hover sa image
-            KTLImage.title = "Play";
-            SOLOImage.title = "Play";
-            RImage.title = "Play";
-            BPImage.title = "Play";
-            MEImage.title = "Play";
-            LLImage.title = "Play";
         }
     });
-
-    audioElement.addEventListener('timeupdate', function () {
-        var currentTime = audioElement.currentTime;
-        var duration = audioElement.duration;
-        progress.value = (currentTime / duration) * 100;
-
-        songIntervals[currentAlbum].forEach(function (song) {
-            var element = document.getElementById(song.id);
-            if (currentTime >= song.start && currentTime <= song.end) {
-                element.style.color = "red";
-            } else {
-                element.style.color = "black";
-            }
-        });
-    });
-
-    audioElement.addEventListener('loadedmetadata', function () {
-        progress.max = audioElement.duration;
-    });
-
-    progress.addEventListener('input', function () {
-        var newTime = (progress.value / 100) * audioElement.duration;
-        audioElement.currentTime = newTime;
-    });
-
-    audioElement.addEventListener('ended', function () {
-        progress.value = 0;
-        songIntervals[currentAlbum].forEach(function (song) {
-            var element = document.getElementById(song.id);
-            element.stylecolor = "black";
-        });
-    });
 });
-
-
-
-
-
-
-
