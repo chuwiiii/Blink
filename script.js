@@ -150,6 +150,7 @@ document.querySelectorAll('.play-button').forEach(function (image) {
             { id: "money", start: 198, end: 366 }
         ]
     };
+
     var currentAlbum = albumId;
 
     function stopAllAudio() {
@@ -159,6 +160,21 @@ document.querySelectorAll('.play-button').forEach(function (image) {
             }
         });
     }
+
+    audioElement.addEventListener('timeupdate', function () {
+        var currentTime = audioElement.currentTime;
+
+        if (songIntervals[currentAlbum]) {
+            songIntervals[currentAlbum].forEach(function (song) {
+                var element = document.getElementById(song.id);
+                if (currentTime >= song.start && currentTime <= song.end) {
+                    element.style.color = "red";
+                } else {
+                    element.style.color = "black";
+                }
+            });
+        }
+    });
 
     image.addEventListener('click', function () {
         if (audioElement.paused) {
